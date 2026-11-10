@@ -1,0 +1,52 @@
+{
+ "E": 2300,
+ "nu": 0.36,
+ "yield": 17.0,
+ "uts": 51.0,
+ "outdir": "./out",
+ "h": 2.0,
+ "curv": 0,
+ "plot": true,
+ "support_excl": 4.0,
+ "cases": [
+  {
+   "id": "pinch-x",
+   "name": "Pinch squeeze 102 N (X)",
+   "rigid321": true,
+   "loads": [
+    {
+     "select": "(r > R - 0.3) & (abs(nz) < 0.2) & (z > zmin + 5) & (z < zmax - 8) & (abs(nx) > 0.707)",
+     "squeeze": 102,
+     "axis": [
+      1,
+      0,
+      0
+     ]
+    }
+   ]
+  }
+ ],
+ "presets": [
+  {
+   "name": "S",
+   "step": "../step/pen-grip_S.step",
+   "vars": {
+    "R": 11.0
+   }
+  },
+  {
+   "name": "M",
+   "step": "../step/pen-grip_M.step",
+   "vars": {
+    "R": 14.0
+   }
+  },
+  {
+   "name": "L",
+   "step": "../step/pen-grip_L.step",
+   "vars": {
+    "R": 16.25
+   }
+  }
+ ]
+}

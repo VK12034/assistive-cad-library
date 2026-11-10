@@ -1,0 +1,103 @@
+[
+ {
+  "preset": "S",
+  "case": "Grip squeeze across slot width (X)",
+  "h": 3.0,
+  "dofs": 56931,
+  "tets": 11139,
+  "vm_max": 2.1263062096471894,
+  "vm_p999": 1.6130186049722206,
+  "vm_loc": [
+   13.53,
+   2.84,
+   2.39
+  ],
+  "s1_max": 12.641494436714638,
+  "umax": 0.01775914997349073,
+  "applied": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "reaction_sum": [
+   -0.0,
+   -0.0,
+   0.0
+  ],
+  "SF_yield": 7.995085525720564,
+  "SF_uts": 23.985256577161692,
+  "notes": [
+   "squeeze 500 N per side along [1, 0, 0] -> 0.3671 / 0.3556 MPa over 3079.2 mm2 (824 facets) [(r > R - 0.3) & (abs(nz) < 0.2) & (z > zmin + 10) & (z < zmax - 10) & (abs(nx) > 0.707)]",
+   "3-2-1 rigid-body supports at bottom vertices [15.25, 0.0, 0.0], [-15.25, -0.0, 0.0], [-0.0, 15.25, 0.0]",
+   "solve 7.3s",
+   "peak reported outside 4.0 mm of the 3 point supports (raw peak incl. supports 11.791 MPa); 1030 of 122529 integration points excluded"
+  ]
+ },
+ {
+  "preset": "S",
+  "case": "Grip squeeze across slot thickness (Y)",
+  "h": 3.0,
+  "dofs": 56931,
+  "tets": 11139,
+  "vm_max": 2.6997130090166763,
+  "vm_p999": 2.1204473450023986,
+  "vm_loc": [
+   8.58,
+   -1.91,
+   49.96
+  ],
+  "s1_max": 12.421326328506142,
+  "umax": 0.027410321254946787,
+  "applied": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "reaction_sum": [
+   -0.0,
+   -0.0,
+   -0.0
+  ],
+  "SF_yield": 6.296965619390765,
+  "SF_uts": 18.890896858172294,
+  "notes": [
+   "squeeze 500 N per side along [0, 1, 0] -> 0.3667 / 0.3668 MPa over 3021.6 mm2 (820 facets) [(r > R - 0.3) & (abs(nz) < 0.2) & (z > zmin + 10) & (z < zmax - 10) & (abs(ny) > 0.707)]",
+   "3-2-1 rigid-body supports at bottom vertices [15.25, 0.0, 0.0], [-15.25, -0.0, 0.0], [-0.0, 15.25, 0.0]",
+   "solve 7.1s",
+   "peak reported outside 4.0 mm of the 3 point supports (raw peak incl. supports 11.711 MPa); 1030 of 122529 integration points excluded"
+  ]
+ },
+ {
+  "preset": "S",
+  "case": "Utensil lever load 102 N at top",
+  "h": 3.0,
+  "dofs": 56931,
+  "tets": 11139,
+  "vm_max": 2.341812356728712,
+  "vm_p999": 1.0185110726709592,
+  "vm_loc": [
+   -4.41,
+   15.45,
+   56.82
+  ],
+  "s1_max": 1.7053863081641274,
+  "umax": 0.01282141333275804,
+  "applied": [
+   0.0,
+   102.0,
+   0.0
+  ],
+  "reaction_sum": [
+   0.0,
+   -102.0,
+   -0.0
+  ],
+  "SF_yield": 7.259334827213644,
+  "SF_uts": 21.77800448164093,
+  "notes": [
+   "force [0, 102, 0] N as uniform traction over 528.0 mm2 (172 facets) [(r < R - 1.5) & (z > zmax - 25) & (ny < -0.5)]",
+   "fixed all DOF on 1499 facets (5536.4 mm2) [(r > R - 0.3) & (abs(nz) < 0.2) & (z < zmax - 25)]",
+   "solve 5.2s"
+  ]
+ }
+]

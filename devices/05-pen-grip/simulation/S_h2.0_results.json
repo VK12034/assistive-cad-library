@@ -1,0 +1,44 @@
+[
+ {
+  "preset": "S",
+  "case": "Pinch squeeze 102 N (X)",
+  "h": 2.0,
+  "dofs": 44316,
+  "tets": 8797,
+  "vm_max": 0.876779829055076,
+  "vm_p999": 0.7963728108561744,
+  "vm_loc": [
+   -0.38,
+   -4.98,
+   13.1
+  ],
+  "s1_max": 0.6456647768499568,
+  "umax": 0.008356591047508456,
+  "vm_raw": 6.573783324142316,
+  "applied": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "reaction_sum": [
+   -0.0,
+   -0.0,
+   0.0
+  ],
+  "SF_yield": 19.389132181931302,
+  "SF_uts": 58.167396545793906,
+  "szz_max": 0.3564897858490596,
+  "szz_loc": [
+   5.06,
+   0.09,
+   12.0
+  ],
+  "SF_aniso": 47.68720079738252,
+  "notes": [
+   "squeeze 102 N per side along [1, 0, 0] -> 0.2082 / 0.2026 MPa over 1105.1 mm2 (664 facets) [(r > R - 0.3) & (abs(nz) < 0.2) & (z > zmin + 5) & (z < zmax - 8) & (abs(nx) > 0.707)]",
+   "3-2-1 rigid-body supports at bottom vertices [10.0, -0.0, 0.0], [-10.0, -0.0, 0.0], [0.0, 10.0, 0.0]",
+   "solve 3.5s",
+   "peak reported outside 4.0 mm of the 3 point supports (raw peak incl. supports 6.574 MPa); 2590 of 96767 integration points excluded"
+  ]
+ }
+]

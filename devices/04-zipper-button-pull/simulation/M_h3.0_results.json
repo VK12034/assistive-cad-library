@@ -1,0 +1,84 @@
+[
+ {
+  "preset": "M",
+  "case": "Axial pull 102 N on loop tip",
+  "h": 3.0,
+  "dofs": 89040,
+  "tets": 16867,
+  "vm_max": 20.41396386189204,
+  "vm_p999": 13.994757923112521,
+  "vm_loc": [
+   66.49,
+   2.65,
+   0.66
+  ],
+  "s1_max": 23.176179255829897,
+  "umax": 1.911495821045453,
+  "vm_raw": 20.41396386189204,
+  "applied": [
+   102.0,
+   0.0,
+   0.0
+  ],
+  "reaction_sum": [
+   -102.0,
+   0.0,
+   -0.0
+  ],
+  "SF_yield": 0.8327633043249827,
+  "SF_uts": 2.4982899129749483,
+  "szz_max": 4.484051957658865,
+  "szz_loc": [
+   69.0,
+   0.01,
+   2.5
+  ],
+  "SF_aniso": 2.4982899129749483,
+  "notes": [
+   "force [102, 0, 0] N as uniform traction over 17.9 mm2 (68 facets) [(abs(y) < LO/2 - W + 0.05) & (x > X1 - TW - 2.8) & (x < X1 - TW + 0.05) & (nx < -0.3) & (abs(nz) < 0.1)]",
+   "fixed all DOF on 344 facets (1291.1 mm2) [(abs(z - HT) < 0.05) & (nz > 0.99) & (x < -10)]",
+   "solve 89.8s"
+  ]
+ },
+ {
+  "preset": "M",
+  "case": "Out-of-plane 10 N on loop tip (capacity check)",
+  "h": 3.0,
+  "dofs": 89040,
+  "tets": 16867,
+  "vm_max": 41.8975438162101,
+  "vm_p999": 32.38278100055938,
+  "vm_loc": [
+   15.35,
+   4.0,
+   0.07
+  ],
+  "s1_max": 36.89604897805767,
+  "umax": 14.806328284181813,
+  "vm_raw": 41.8975438162101,
+  "applied": [
+   0.0,
+   0.0,
+   -10.0
+  ],
+  "reaction_sum": [
+   -0.0,
+   0.0,
+   10.0
+  ],
+  "SF_yield": 0.405751708848926,
+  "SF_uts": 1.217255126546778,
+  "szz_max": 10.88415564686178,
+  "szz_loc": [
+   0.24,
+   -0.27,
+   3.69
+  ],
+  "SF_aniso": 1.217255126546778,
+  "notes": [
+   "force [0, 0, -10] N as uniform traction over 17.9 mm2 (68 facets) [(abs(y) < LO/2 - W + 0.05) & (x > X1 - TW - 2.8) & (x < X1 - TW + 0.05) & (nx < -0.3) & (abs(nz) < 0.1)]",
+   "fixed all DOF on 344 facets (1291.1 mm2) [(abs(z - HT) < 0.05) & (nz > 0.99) & (x < -10)]",
+   "solve 100.3s"
+  ]
+ }
+]

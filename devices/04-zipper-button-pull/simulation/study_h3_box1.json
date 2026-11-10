@@ -1,0 +1,110 @@
+{
+ "E": 2300,
+ "nu": 0.36,
+ "yield": 17.0,
+ "uts": 51.0,
+ "outdir": "./out",
+ "h": 3.0,
+ "curv": 0,
+ "plot": true,
+ "cases": [
+  {
+   "id": "pull",
+   "name": "Axial pull 102 N on loop tip",
+   "fixed": "(abs(z - HT) < 0.05) & (nz > 0.99) & (x < -10)",
+   "loads": [
+    {
+     "select": "(abs(y) < LO/2 - W + 0.05) & (x > X1 - TW - 2.8) & (x < X1 - TW + 0.05) & (nx < -0.3) & (abs(nz) < 0.1)",
+     "force": [
+      102,
+      0,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "oop",
+   "name": "Out-of-plane 10 N on loop tip (capacity check)",
+   "fixed": "(abs(z - HT) < 0.05) & (nz > 0.99) & (x < -10)",
+   "loads": [
+    {
+     "select": "(abs(y) < LO/2 - W + 0.05) & (x > X1 - TW - 2.8) & (x < X1 - TW + 0.05) & (nx < -0.3) & (abs(nz) < 0.1)",
+     "force": [
+      0,
+      0,
+      -10
+     ]
+    }
+   ]
+  }
+ ],
+ "presets": [
+  {
+   "name": "S",
+   "step": "../step/zipper-button-pull_S.step",
+   "vars": {
+    "X1": 73.0,
+    "W": 3.0,
+    "LO": 11.43,
+    "HT": 14.0,
+    "TW": 4.5
+   },
+   "boxes": [
+    [
+     10,
+     76,
+     -8,
+     8,
+     -1,
+     5,
+     1.0
+    ]
+   ]
+  },
+  {
+   "name": "M",
+   "step": "../step/zipper-button-pull_M.step",
+   "vars": {
+    "X1": 73.0,
+    "W": 3.0,
+    "LO": 11.43,
+    "HT": 14.0,
+    "TW": 4.5
+   },
+   "boxes": [
+    [
+     10,
+     76,
+     -8,
+     8,
+     -1,
+     5,
+     1.0
+    ]
+   ]
+  },
+  {
+   "name": "L",
+   "step": "../step/zipper-button-pull_L.step",
+   "vars": {
+    "X1": 73.0,
+    "W": 3.0,
+    "LO": 11.43,
+    "HT": 14.0,
+    "TW": 4.5
+   },
+   "boxes": [
+    [
+     10,
+     76,
+     -8,
+     8,
+     -1,
+     5,
+     1.0
+    ]
+   ]
+  }
+ ]
+}

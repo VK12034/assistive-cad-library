@@ -1,0 +1,65 @@
+{
+ "S": {
+  "volume_cm3": 13.2806,
+  "area_cm2": 47.009,
+  "bbox_mm": [
+   22.0,
+   22.0,
+   45.0
+  ],
+  "zmin_mm": 0.0,
+  "faces": 7,
+  "params": {
+   "grip_od": "22 mm",
+   "grip_len": "45 mm",
+   "bore_wide": "11 mm",
+   "bore_narrow": "7 mm",
+   "nose_h": "6 mm",
+   "nose_in": "grip_od / 2 - bore_narrow / 2 - 2.5 mm",
+   "base_chamfer": "1 mm",
+   "nose_r": "1.5 mm"
+  }
+ },
+ "L": {
+  "volume_cm3": 31.8795,
+  "area_cm2": 68.171,
+  "bbox_mm": [
+   32.5,
+   32.5,
+   45.0
+  ],
+  "zmin_mm": 0.0,
+  "faces": 7,
+  "params": {
+   "grip_od": "32.5 mm",
+   "grip_len": "45 mm",
+   "bore_wide": "11 mm",
+   "bore_narrow": "7 mm",
+   "nose_h": "6 mm",
+   "nose_in": "grip_od / 2 - bore_narrow / 2 - 2.5 mm",
+   "base_chamfer": "1 mm",
+   "nose_r": "1.5 mm"
+  }
+ },
+ "M": {
+  "volume_cm3": 23.0399,
+  "area_cm2": 58.651,
+  "bbox_mm": [
+   28.0,
+   28.0,
+   45.0
+  ],
+  "zmin_mm": 0.0,
+  "faces": 7,
+  "params": {
+   "grip_od": "28 mm",
+   "grip_len": "45 mm",
+   "bore_wide": "11 mm",
+   "bore_narrow": "7 mm",
+   "nose_h": "6 mm",
+   "nose_in": "grip_od / 2 - bore_narrow / 2 - 2.5 mm",
+   "base_chamfer": "1 mm",
+   "nose_r": "1.5 mm"
+  }
+ }
+}

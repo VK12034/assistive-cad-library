@@ -1,71 +1,57 @@
 # Open Assistive CAD Library
 
-Parametric, 3D-printable assistive devices. Every part is resizable from named
-user parameters, prints without supports on a standard FDM printer, and needs no
-hardware to assemble.
+Parametric, 3D-printable assistive devices. Every part is resizable from named Fusion user parameters, prints without supports on a standard FDM printer in under 2 hours, and is a single printed piece with no hardware.
 
-> **Status: untested, v0.1.** Nothing in this repository has been printed or
-> physically tested. See [DISCLAIMER.md](DISCLAIMER.md).
+> **Status: untested, v0.1.** Nothing in this repository has been printed or physically tested. See [DISCLAIMER.md](DISCLAIMER.md).
 
-> **These are not medical devices.** They are not intended to diagnose, treat,
-> cure, or prevent any condition, and they have not been evaluated or cleared by
-> any regulatory body.
+> **These are not medical devices.** They are not intended to diagnose, treat, cure, or prevent any condition, and they have not been evaluated or cleared by any regulatory body.
 
 ## The library
 
-| # | Device | Purpose | CAD | STL / STEP | Simulation |
-|---|--------|---------|-----|-----------|------------|
-| 1 | [Built-up handle sleeve](devices/01-built-up-handle-sleeve/) | Enlarges a utensil or toothbrush handle to reduce required grip force | — | — | — |
-| 2 | [Key turner](devices/02-key-turner/) | Adds a lever arm to a key to reduce pinch force and wrist torque | — | — | — |
-| 3 | [Bottle and jar opener](devices/03-bottle-jar-opener/) | Increases effective grip diameter and friction on caps and lids | — | — | — |
-| 4 | [Zipper and button pull](devices/04-zipper-button-pull/) | Gives a hooked, larger-diameter handle for zippers and buttons | — | — | — |
-| 5 | [Pen grip](devices/05-pen-grip/) | Enlarges a pen barrel to reduce pinch force while writing | — | — | — |
+| # | Device | Purpose | Presets | Print time (S / M / L) | Min. safety factor |
+|---|--------|---------|---------|------------------------|--------------------|
+| 1 | [Built-up handle sleeve](devices/01-built-up-handle-sleeve/) | Thickens a utensil or toothbrush handle so it can be held with less grip force | grip 32.5 / 37.5 / 41.5 mm | 1 h 07 / 1 h 33 / 1 h 54 | 5.6 |
+| 2 | [Key turner](devices/02-key-turner/) | A large paddle that holds a key, for a whole-hand grip and a longer lever | paddle 80 / 95 / 105 mm | 1 h 22 / 1 h 41 / 1 h 54 | 2.21 (thin margin) |
+| 3 | [Bottle and jar opener](devices/03-bottle-jar-opener/) | V-jaw "jar key" for caps from 28 to 82 mm with a long lever | handle 80 / 95 / 105 mm | 0 h 55 / 0 h 59 / 1 h 02 | 3.53 |
+| 4 | [Zipper and button pull](devices/04-zipper-button-pull/) | Handle with a thin loop that pulls buttons through buttonholes and catches zipper tabs | handle 80 / 95 / 105 mm | 0 h 32 / 0 h 37 / 0 h 40 | 2.42 (straight pull only; weak out of plane) |
+| 5 | [Pen grip](devices/05-pen-grip/) | Thick sleeve that slides onto a pen | diameter 22 / 28 / 32.5 mm | 0 h 25 / 0 h 30 / 0 h 37 | 19.4 |
 
-Every cell above is filled in only from a measured source: a figure taken from
-the Fusion model, a simulation result, a slicer run, or a cited publication.
-Nothing is estimated unless it is explicitly labelled as an estimate.
+Every figure in this table comes from a measured source: a cited publication, the Fusion model, a simulation result, or a slicer run (ElegooSlicer 1.5.2.2, Prusa MK3S profile, PLA, 0.30 mm layers). Anything estimated is labelled as an estimate on the model page.
 
-## How each device is documented
+**About the safety factors:** they come from linear static stress studies of the solid model, run with open-source tools (gmsh + scikit-fem), **not Fusion Simulation**. Loads come from published grip, pinch and torque data. Each model page states the load, constraints, criterion and limits. They are design-stage indicators, not a statement about a printed part. See [docs/methodology.md](docs/methodology.md).
 
-Each device folder contains:
+## What's in each device folder
 
 ```
 devices/NN-device-name/
-├── README.md      model page: purpose, fit, print settings, resizing, limits
-├── cad/           Fusion source (.f3d) and the build script that generates it
-├── step/          STEP export per size preset
-├── stl/           STL export per size preset
-├── renders/       viewport captures
-└── simulation/    static stress setup and results
+├── README.md      model page: purpose, fit, presets, print settings, resizing, use, checks, simulation, limits, changelog
+├── cad/           Fusion archive (.f3d), the build script that generates it, and per-preset measurements
+├── step/          STEP per size preset (S, M, L)
+├── stl/           STL per size preset (S, M, L)
+├── renders/       Fusion viewport captures
+└── simulation/    stress study setups, results and plots
 ```
 
 ## Sizing
 
-Sizes are driven by published hand anthropometry rather than guesswork. Small,
-medium, and large presets and the data behind them are documented in
-[docs/anthropometry-sources.md](docs/anthropometry-sources.md).
+Sizes come from published hand anthropometry: ANSUR II hand length and breadth percentiles, computed from the raw public data. Object sizes (foam tubing, lug caps, bottle necks, buttons) also come from published sources. Everything is listed in [docs/anthropometry-sources.md](docs/anthropometry-sources.md).
 
 ## Printing
 
-All parts are designed for a flat base, a 45° maximum overhang, and no supports.
-Per-device print settings live on each model page; shared defaults and the
-rationale for them are in [docs/print-settings.md](docs/print-settings.md).
+All parts have a flat base, no overhang beyond 45 degrees, and no supports. Shared settings and the reasons for them are in [docs/print-settings.md](docs/print-settings.md).
 
 ## How these are built
 
-The models are not drawn by hand. Each one is generated by a Python script that
-drives the Fusion 360 API, so every key dimension is a named user parameter and
-the whole part rebuilds from a changed number. The scripts are in `tools/` and
-the approach is described in [docs/methodology.md](docs/methodology.md).
+The models are not drawn by hand. Each one is generated by a Python script that drives the Fusion 360 API through Fusion's local MCP server, so every key dimension is a named user parameter and the whole part rebuilds when a number changes. The scripts are in each device's `cad/` folder; shared tools are in [tools/](tools/). The approach is described in [docs/methodology.md](docs/methodology.md).
+
+## Contributing
+
+If you print one of these, please open an issue with your printer, settings, and what worked or didn't. Measured fit and real-world feedback are exactly what v0.1 is missing.
 
 ## License
 
-Licensed under [Creative Commons Attribution 4.0 International](LICENSE)
-(CC BY 4.0). You may share and adapt these files, including commercially, as
-long as you give appropriate credit and indicate if changes were made.
+Licensed under [Creative Commons Attribution 4.0 International](LICENSE) (CC BY 4.0). You may share and adapt these files, including commercially, as long as you give appropriate credit and indicate if changes were made.
 
 ## Versioning
 
-Each device carries its own version and changelog on its model page. `v0.1`
-means the design exists, has been checked in CAD and simulation, and has never
-been printed or used.
+Each device carries its own version and changelog on its model page. `v0.1` means the design exists, has been checked in CAD and simulation, and has never been printed or used.
