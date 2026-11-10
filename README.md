@@ -13,13 +13,13 @@ hardware to assemble.
 
 ## The library
 
-| # | Device | Purpose | CAD | STL / STEP | Simulation | Status |
-|---|--------|---------|-----|-----------|------------|--------|
-| 1 | [Built-up handle sleeve](devices/01-built-up-handle-sleeve/) | Enlarges a utensil or toothbrush handle to reduce required grip force | — | — | — | not yet built |
-| 2 | [Key turner](devices/02-key-turner/) | Adds a lever arm to a key to reduce pinch force and wrist torque | — | — | — | not yet built |
-| 3 | [Bottle and jar opener](devices/03-bottle-jar-opener/) | Increases effective grip diameter and friction on caps and lids | — | — | — | not yet built |
-| 4 | [Zipper and button pull](devices/04-zipper-button-pull/) | Gives a hooked, larger-diameter handle for zippers and buttons | — | — | — | not yet built |
-| 5 | [Pen grip](devices/05-pen-grip/) | Enlarges a pen barrel to reduce pinch force while writing | — | — | — | not yet built |
+| # | Device | Purpose | CAD | STL / STEP | Simulation |
+|---|--------|---------|-----|-----------|------------|
+| 1 | [Built-up handle sleeve](devices/01-built-up-handle-sleeve/) | Enlarges a utensil or toothbrush handle to reduce required grip force | — | — | — |
+| 2 | [Key turner](devices/02-key-turner/) | Adds a lever arm to a key to reduce pinch force and wrist torque | — | — | — |
+| 3 | [Bottle and jar opener](devices/03-bottle-jar-opener/) | Increases effective grip diameter and friction on caps and lids | — | — | — |
+| 4 | [Zipper and button pull](devices/04-zipper-button-pull/) | Gives a hooked, larger-diameter handle for zippers and buttons | — | — | — |
+| 5 | [Pen grip](devices/05-pen-grip/) | Enlarges a pen barrel to reduce pinch force while writing | — | — | — |
 
 Every cell above is filled in only from a measured source: a figure taken from
 the Fusion model, a simulation result, a slicer run, or a cited publication.
