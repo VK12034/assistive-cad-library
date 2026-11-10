@@ -1,0 +1,86 @@
+{
+ "S": {
+  "volume_cm3": 80.7949,
+  "area_cm2": 160.009,
+  "bbox_mm": [
+   80.0,
+   18.0,
+   62.0
+  ],
+  "zmin_mm": 0.0,
+  "faces": 63,
+  "params": {
+   "paddle_w": "80 mm",
+   "paddle_h": "62 mm",
+   "paddle_t": "18 mm",
+   "key_t": "2.4 mm",
+   "key_slot_w": "32 mm",
+   "key_slot_d": "18 mm",
+   "slot_leadin": "1 mm",
+   "finger_d": "20 mm",
+   "finger_z": "finger_d / 2 + 6 mm",
+   "top_r": "8 mm",
+   "base_ch": "3 mm",
+   "edge_r": "2 mm",
+   "hole_r": "1.5 mm",
+   "slot_end_r": "key_t / 2 - 0.1 mm",
+   "slot_floor_r": "1 mm"
+  }
+ },
+ "L": {
+  "volume_cm3": 121.0735,
+  "area_cm2": 218.275,
+  "bbox_mm": [
+   105.0,
+   18.0,
+   70.0
+  ],
+  "zmin_mm": 0.0,
+  "faces": 63,
+  "params": {
+   "paddle_w": "105 mm",
+   "paddle_h": "70 mm",
+   "paddle_t": "18 mm",
+   "key_t": "2.4 mm",
+   "key_slot_w": "32 mm",
+   "key_slot_d": "18 mm",
+   "slot_leadin": "1 mm",
+   "finger_d": "24 mm",
+   "finger_z": "finger_d / 2 + 6 mm",
+   "top_r": "8 mm",
+   "base_ch": "3 mm",
+   "edge_r": "2 mm",
+   "hole_r": "1.5 mm",
+   "slot_end_r": "key_t / 2 - 0.1 mm",
+   "slot_floor_r": "1 mm"
+  }
+ },
+ "M": {
+  "volume_cm3": 103.0603,
+  "area_cm2": 192.366,
+  "bbox_mm": [
+   95.0,
+   18.0,
+   66.0
+  ],
+  "zmin_mm": 0.0,
+  "faces": 63,
+  "params": {
+   "paddle_w": "95 mm",
+   "paddle_h": "66 mm",
+   "paddle_t": "18 mm",
+   "key_t": "2.4 mm",
+   "key_slot_w": "32 mm",
+   "key_slot_d": "18 mm",
+   "slot_leadin": "1 mm",
+   "finger_d": "22 mm",
+   "finger_z": "finger_d / 2 + 6 mm",
+   "top_r": "8 mm",
+   "base_ch": "3 mm",
+   "edge_r": "2 mm",
+   "hole_r": "1.5 mm",
+   "slot_end_r": "key_t / 2 - 0.1 mm",
+   "slot_floor_r": "1 mm"
+  }
+ }
+}
