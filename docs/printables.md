@@ -144,7 +144,6 @@ Use these on every model's Printables upload page.
 |-------|--------|
 | Main category | accessibility, household or medical aids (whichever is offered); otherwise Household |
 | Model origin | Original model - I made it |
-| Was AI used to create this model? | Yes - AI-assisted creation |
 | NSFW / Political | leave unchecked |
 | License | Creative Commons - Attribution (plain "Attribution", no NC / SA / ND) |
 | External / source link | https://github.com/VK12034/assistive-cad-library/releases/tag/v0.1 |
