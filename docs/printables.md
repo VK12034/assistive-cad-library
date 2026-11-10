@@ -133,3 +133,88 @@ Print settings: PLA, 0.30 mm layers, 2 perimeters, 10 % infill, no supports, pri
 - L: 37 m, 12.3 g
 
 Stress check (open-source FE, solid model): minimum safety factor 19.4 under a 102 N pinch. It's hard PLA, not soft foam. **Untested v0.1, not a medical device.**
+
+---
+
+# Upload form answers (all five models)
+
+Use these on every model's Printables upload page.
+
+| Field | Answer |
+|-------|--------|
+| Main category | accessibility, household or medical aids (whichever is offered); otherwise Household |
+| Model origin | Original model - I made it |
+| Was AI used to create this model? | Yes - AI-assisted creation |
+| NSFW / Political | leave unchecked |
+| License | Creative Commons - Attribution (plain "Attribution", no NC / SA / ND) |
+| External / source link | https://github.com/VK12034/assistive-cad-library/releases/tag/v0.1 |
+| Print Files section | leave empty (G-code is printer-specific) |
+| Model Files order | STL S, M, L, then STEP S, M, L |
+| Photos | the `_iso` render first (cover), then the second render |
+
+Times and grams below are slicer estimates (ElegooSlicer 1.5.2.2, Prusa MK3S profile, PLA, 0.30 mm layers). Paste each note into the note box under that file.
+
+## 1. Built-up handle sleeve
+
+Folder: `devices/01-built-up-handle-sleeve/`. Tags: `assistive accessibility arthritis adaptive utensil toothbrush grip parametric nosupports`
+
+| File | Note |
+|------|------|
+| handle-sleeve_S.stl | Small: 32.5 mm grip, 80 mm long. About 1h07, 22.5 g |
+| handle-sleeve_M.stl | Medium: 37.5 mm grip, 95 mm long. About 1h33, 31.5 g |
+| handle-sleeve_L.stl | Large: 41.5 mm grip, 105 mm long. About 1h54, 41.0 g |
+| handle-sleeve_S.step | Small, STEP for editing (CAD) |
+| handle-sleeve_M.step | Medium, STEP for editing (CAD) |
+| handle-sleeve_L.step | Large, STEP for editing (CAD) |
+
+## 2. Key turner
+
+Folder: `devices/02-key-turner/`. Tags: `assistive accessibility arthritis key turner keyholder grip parametric nosupports`
+
+| File | Note |
+|------|------|
+| key-turner_S.stl | Small: 80 x 62 x 18 mm paddle. About 1h22, 29.0 g. Print standing on long edge |
+| key-turner_M.stl | Medium: 95 x 66 x 18 mm paddle. About 1h41, 35.8 g. Print standing on long edge |
+| key-turner_L.stl | Large: 105 x 70 x 18 mm paddle. About 1h54, 41.0 g. Print standing on long edge |
+| key-turner_S.step | Small, STEP for editing (CAD) |
+| key-turner_M.step | Medium, STEP for editing (CAD) |
+| key-turner_L.step | Large, STEP for editing (CAD) |
+
+## 3. Bottle and jar opener
+
+Folder: `devices/03-bottle-jar-opener/`. Tags: `assistive accessibility arthritis jar opener bottle opener kitchen parametric nosupports`
+
+| File | Note |
+|------|------|
+| jar-opener_S.stl | Small: 80 mm handle, 172 x 122 x 10 mm. Caps 28-82 mm. About 55 min, 21.2 g |
+| jar-opener_M.stl | Medium: 95 mm handle, 187 x 122 x 10 mm. Caps 28-82 mm. About 59 min, 23.0 g |
+| jar-opener_L.stl | Large: 105 mm handle, 197 x 122 x 10 mm. Caps 28-82 mm. About 1h02, 24.2 g |
+| jar-opener_S.step | Small, STEP for editing (CAD) |
+| jar-opener_M.step | Medium, STEP for editing (CAD) |
+| jar-opener_L.step | Large, STEP for editing (CAD) |
+
+## 4. Zipper and button pull
+
+Folder: `devices/04-zipper-button-pull/`. Tags: `assistive accessibility arthritis buttonhook zipper dressing aid parametric nosupports`
+
+| File | Note |
+|------|------|
+| zipper-button-pull_S.stl | Small: 80 mm handle, 153 mm overall. Loop for 18-ligne buttons. About 32 min, 12.3 g |
+| zipper-button-pull_M.stl | Medium: 95 mm handle, 168 mm overall. Loop for 18-ligne buttons. About 37 min, 14.2 g |
+| zipper-button-pull_L.stl | Large: 105 mm handle, 178 mm overall. Loop for 18-ligne buttons. About 40 min, 15.4 g |
+| zipper-button-pull_S.step | Small, STEP for editing (CAD) |
+| zipper-button-pull_M.step | Medium, STEP for editing (CAD) |
+| zipper-button-pull_L.step | Large, STEP for editing (CAD) |
+
+## 5. Pen grip
+
+Folder: `devices/05-pen-grip/`. Tags: `assistive accessibility arthritis pen grip writing aid parametric nosupports`
+
+| File | Note |
+|------|------|
+| pen-grip_S.stl | Small: 22 mm diameter, 45 mm long. About 25 min, 7.5 g |
+| pen-grip_M.stl | Medium: 28 mm diameter, 45 mm long. About 30 min, 9.8 g |
+| pen-grip_L.stl | Large: 32.5 mm diameter, 45 mm long. About 37 min, 12.3 g |
+| pen-grip_S.step | Small, STEP for editing (CAD) |
+| pen-grip_M.step | Medium, STEP for editing (CAD) |
+| pen-grip_L.step | Large, STEP for editing (CAD) |
