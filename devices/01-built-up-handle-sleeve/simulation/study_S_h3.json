@@ -1,0 +1,68 @@
+{
+ "E": 2300,
+ "nu": 0.36,
+ "yield": 17.0,
+ "uts": 51.0,
+ "outdir": "./out",
+ "cases": [
+  {
+   "id": "squeeze-x",
+   "name": "Grip squeeze across slot width (X)",
+   "rigid321": true,
+   "loads": [
+    {
+     "select": "(r > R - 0.3) & (abs(nz) < 0.2) & (z > zmin + 10) & (z < zmax - 10) & (abs(nx) > 0.707)",
+     "squeeze": 500,
+     "axis": [
+      1,
+      0,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "squeeze-y",
+   "name": "Grip squeeze across slot thickness (Y)",
+   "rigid321": true,
+   "loads": [
+    {
+     "select": "(r > R - 0.3) & (abs(nz) < 0.2) & (z > zmin + 10) & (z < zmax - 10) & (abs(ny) > 0.707)",
+     "squeeze": 500,
+     "axis": [
+      0,
+      1,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "lever",
+   "name": "Utensil lever load 102 N at top",
+   "fixed": "(r > R - 0.3) & (abs(nz) < 0.2) & (z < zmax - 25)",
+   "loads": [
+    {
+     "select": "(r < R - 1.5) & (z > zmax - 25) & (ny < -0.5)",
+     "force": [
+      0,
+      102,
+      0
+     ]
+    }
+   ]
+  }
+ ],
+ "h": 3.0,
+ "plot": false,
+ "presets": [
+  {
+   "name": "S",
+   "step": "../step/handle-sleeve_S.step",
+   "vars": {
+    "R": 16.25
+   }
+  }
+ ],
+ "curv": 0
+}

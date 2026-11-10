@@ -1,0 +1,40 @@
+
+[M] h=3.00 mm: 4212 nodes, 16930 tets, 83988 DOF (P2), 5284 boundary facets, z 0.00..95.00 (68.3s)
+      AMG-CG: 43 iterations, rel residual 7.7e-11
+  Grip squeeze across slot width (X) vm_max=1.145 MPa at [-0.1, -7.7, 60.67] | p99.9=0.999 | s1_max=0.964 | umax=0.0137 mm | SF vs 17 MPa = 14.85 | SF vs 51 MPa = 44.55 | reactions [0.0, -0.0, -0.0]
+       squeeze 500 N per side along [1, 0, 0] -> 0.2449 / 0.2406 MPa over 4621.6 mm2 (1230 facets) [(r > R - 0.3) & (abs(nz) < 0.2) & (z > zmin + 10) & (z < zmax - 10) & (abs(nx) > 0.707)]
+       3-2-1 rigid-body supports at bottom vertices [17.75, 0.0, 0.0], [-17.75, -0.0, 0.0], [1.47, 17.69, 0.0]
+       solve 15.4s
+       peak reported outside 4.0 mm of the 3 point supports (raw peak incl. supports 8.402 MPa); 1198 of 186230 integration points excluded
+      AMG-CG: 43 iterations, rel residual 5.8e-11
+  Grip squeeze across slot thickness (Y) vm_max=1.749 MPa at [-10.27, -1.5, 64.88] | p99.9=1.408 | s1_max=1.047 | umax=0.0148 mm | SF vs 17 MPa = 9.72 | SF vs 51 MPa = 29.16 | reactions [-0.0, 0.0, 0.0]
+       squeeze 500 N per side along [0, 1, 0] -> 0.2614 / 0.2615 MPa over 4203.5 mm2 (1122 facets) [(r > R - 0.3) & (abs(nz) < 0.2) & (z > zmin + 10) & (z < zmax - 10) & (abs(ny) > 0.707)]
+       3-2-1 rigid-body supports at bottom vertices [17.75, 0.0, 0.0], [-17.75, -0.0, 0.0], [1.47, 17.69, 0.0]
+       solve 16.7s
+       peak reported outside 4.0 mm of the 3 point supports (raw peak incl. supports 7.727 MPa); 1198 of 186230 integration points excluded
+      AMG-CG: 44 iterations, rel residual 5.9e-11
+  Utensil lever load 102 N at top    vm_max=1.499 MPa at [-0.81, 18.3, 70.27] | p99.9=0.769 | s1_max=1.425 | umax=0.0092 mm | SF vs 17 MPa = 11.34 | SF vs 51 MPa = 34.02 | reactions [0.0, -102.0, 0.0]
+       force [0, 102, 0] N as uniform traction over 603.2 mm2 (202 facets) [(r < R - 1.5) & (z > zmax - 25) & (ny < -0.5)]
+       fixed all DOF on 2160 facets (8046.4 mm2) [(r > R - 0.3) & (abs(nz) < 0.2) & (z < zmax - 25)]
+       solve 13.4s
+
+[L] h=3.00 mm: 5444 nodes, 22693 tets, 110205 DOF (P2), 6308 boundary facets, z 0.00..105.00 (64.2s)
+      AMG-CG: 40 iterations, rel residual 8.1e-11
+  Grip squeeze across slot width (X) vm_max=0.846 MPa at [0.09, 8.11, 73.26] | p99.9=0.733 | s1_max=0.639 | umax=0.0109 mm | SF vs 17 MPa = 20.09 | SF vs 51 MPa = 60.26 | reactions [0.0, -0.0, -0.0]
+       squeeze 500 N per side along [1, 0, 0] -> 0.1981 / 0.2005 MPa over 5591.0 mm2 (1492 facets) [(r > R - 0.3) & (abs(nz) < 0.2) & (z > zmin + 10) & (z < zmax - 10) & (abs(nx) > 0.707)]
+       3-2-1 rigid-body supports at bottom vertices [19.75, 0.0, 0.0], [-19.75, -0.0, 0.0], [1.48, 19.69, 0.0]
+       solve 22.5s
+       peak reported outside 4.0 mm of the 3 point supports (raw peak incl. supports 6.311 MPa); 1226 of 249623 integration points excluded
+      AMG-CG: 40 iterations, rel residual 8.8e-11
+  Grip squeeze across slot thickness (Y) vm_max=1.273 MPa at [-9.88, 1.51, 64.49] | p99.9=0.995 | s1_max=0.701 | umax=0.0102 mm | SF vs 17 MPa = 13.35 | SF vs 51 MPa = 40.05 | reactions [-0.0, 0.0, 0.0]
+       squeeze 500 N per side along [0, 1, 0] -> 0.2107 / 0.1983 MPa over 5419.8 mm2 (1425 facets) [(r > R - 0.3) & (abs(nz) < 0.2) & (z > zmin + 10) & (z < zmax - 10) & (abs(ny) > 0.707)]
+       3-2-1 rigid-body supports at bottom vertices [19.75, 0.0, 0.0], [-19.75, -0.0, 0.0], [1.48, 19.69, 0.0]
+       solve 20.0s
+       peak reported outside 4.0 mm of the 3 point supports (raw peak incl. supports 6.623 MPa); 1226 of 249623 integration points excluded
+      AMG-CG: 39 iterations, rel residual 7.4e-11
+  Utensil lever load 102 N at top    vm_max=1.191 MPa at [0.31, 20.54, 81.43] | p99.9=0.564 | s1_max=1.061 | umax=0.0064 mm | SF vs 17 MPa = 14.28 | SF vs 51 MPa = 42.83 | reactions [0.0, -102.0, -0.0]
+       force [0, 102, 0] N as uniform traction over 618.6 mm2 (213 facets) [(r < R - 1.5) & (z > zmax - 25) & (ny < -0.5)]
+       fixed all DOF on 2748 facets (10331.1 mm2) [(r > R - 0.3) & (abs(nz) < 0.2) & (z < zmax - 25)]
+       solve 16.0s
+WORST: M / Grip squeeze across slot thickness (Y) h=3.0 vm_max=1.749 MPa SF_yield=9.72
+ML exit=0

@@ -1,0 +1,55 @@
+{
+ "E": 2300,
+ "nu": 0.36,
+ "yield": 17.0,
+ "uts": 51.0,
+ "outdir": "./out",
+ "h": 3.0,
+ "curv": 0,
+ "plot": false,
+ "cases": [
+  {
+   "id": "cap82",
+   "name": "Cap 82 mm, 5.5 N*m",
+   "fixed": "(abs(abs(y) - x * t30) < 0.05) & (abs(x - 61.5) < 4) & (abs(nz) < 0.1)",
+   "loads": [
+    {
+     "select": "(abs(y - HW/2) < 0.05) & (ny > 0.99) & (x < -HL + 50)",
+     "force_expr": "5500.0 / (82 + HL - 25)",
+     "dir": [
+      0,
+      -1,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "cap28",
+   "name": "Cap 28 mm, 5.5 N*m",
+   "fixed": "(abs(abs(y) - x * t30) < 0.05) & (abs(x - 21.0) < 4) & (abs(nz) < 0.1)",
+   "loads": [
+    {
+     "select": "(abs(y - HW/2) < 0.05) & (ny > 0.99) & (x < -HL + 50)",
+     "force_expr": "5500.0 / (28 + HL - 25)",
+     "dir": [
+      0,
+      -1,
+      0
+     ]
+    }
+   ]
+  }
+ ],
+ "presets": [
+  {
+   "name": "L",
+   "step": "../step/jar-opener_L.step",
+   "vars": {
+    "HL": 105,
+    "HW": 30.0,
+    "t30": 0.5773502691896257
+   }
+  }
+ ]
+}

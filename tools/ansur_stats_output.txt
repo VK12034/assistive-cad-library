@@ -1,0 +1,21 @@
+MALE n = 4082
+  handlength           p5=177.0 p50=193.0 p95=210.0 mean=193.3
+  handbreadth          p5=81.0 p50=88.0 p95=96.0 mean=88.3
+  handcircumference    p5=195.0 p50=212.0 p95=230.0 mean=212.3
+  palmlength           p5=107.0 p50=116.0 p95=127.0 mean=116.5
+  thumbtipreach        p5=742.0 p50=811.0 p95=886.0 mean=811.9
+  wristcircumference   p5=162.0 p50=176.0 p95=191.0 mean=175.9
+FEMALE n = 1986
+  handlength           p5=165.0 p50=180.0 p95=199.0 mean=181.1
+  handbreadth          p5=72.0 p50=78.0 p95=85.0 mean=78.2
+  handcircumference    p5=173.0 p50=187.0 p95=202.0 mean=186.6
+  palmlength           p5=100.0 p50=108.0 p95=119.0 mean=108.7
+  thumbtipreach        p5=674.2 p50=742.0 p95=816.0 mean=744.0
+  wristcircumference   p5=142.2 p50=154.0 p95=168.0 mean=154.8
+COMBINED n = 6068
+  handlength           p5=171.0 p50=189.5 p95=208.0
+  handbreadth          p5=74.0 p50=86.0 p95=94.0
+  handcircumference    p5=177.0 p50=206.0 p95=227.0
+  palmlength           p5=103.0 p50=114.0 p95=126.0
+  thumbtipreach        p5=701.0 p50=792.0 p95=876.6
+  wristcircumference   p5=147.0 p50=170.0 p95=189.0

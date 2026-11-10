@@ -1,0 +1,68 @@
+{
+ "S": {
+  "volume_cm3": 53.308,
+  "area_cm2": 131.529,
+  "bbox_mm": [
+   32.5,
+   32.5,
+   80.0
+  ],
+  "zmin_mm": 0.0,
+  "faces": 13,
+  "params": {
+   "grip_dia": "32.5 mm",
+   "grip_len": "80 mm",
+   "bore_top_dia": "20 mm",
+   "bore_bot_dia": "6.4 mm",
+   "slot_w_top": "min(24 mm; grip_dia - 2 * ( top_fillet + 3 mm ))",
+   "slot_w_bot": "12 mm",
+   "slot_t": "3.5 mm",
+   "top_fillet": "3 mm",
+   "base_chamfer": "1 mm"
+  }
+ },
+ "L": {
+  "volume_cm3": 124.2525,
+  "area_cm2": 212.335,
+  "bbox_mm": [
+   41.5,
+   41.5,
+   105.0
+  ],
+  "zmin_mm": 0.0,
+  "faces": 13,
+  "params": {
+   "grip_dia": "41.5 mm",
+   "grip_len": "105 mm",
+   "bore_top_dia": "20 mm",
+   "bore_bot_dia": "6.4 mm",
+   "slot_w_top": "min(24 mm; grip_dia - 2 * ( top_fillet + 3 mm ))",
+   "slot_w_bot": "12 mm",
+   "slot_t": "3.5 mm",
+   "top_fillet": "3 mm",
+   "base_chamfer": "1 mm"
+  }
+ },
+ "M": {
+  "volume_cm3": 88.8425,
+  "area_cm2": 177.439,
+  "bbox_mm": [
+   37.5,
+   37.5,
+   95.0
+  ],
+  "zmin_mm": 0.0,
+  "faces": 13,
+  "params": {
+   "grip_dia": "37.5 mm",
+   "grip_len": "95 mm",
+   "bore_top_dia": "20 mm",
+   "bore_bot_dia": "6.4 mm",
+   "slot_w_top": "min(24 mm; grip_dia - 2 * ( top_fillet + 3 mm ))",
+   "slot_w_bot": "12 mm",
+   "slot_t": "3.5 mm",
+   "top_fillet": "3 mm",
+   "base_chamfer": "1 mm"
+  }
+ }
+}
