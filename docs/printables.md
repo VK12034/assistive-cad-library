@@ -12,7 +12,7 @@ Five simple, parametric assistive aids for everyday tasks: eating and brushing t
 
 **These designs are untested (v0.1).** They have been modelled, checked and stress-analysed in software, but never printed or used by anyone. They are **not medical devices**. If you're choosing aids for a specific person, involve an occupational therapist. If you print one, please post a make or open an issue on GitHub: real-world feedback is exactly what v0.1 needs.
 
-Source, build scripts, stress studies and full documentation: [GitHub repo link]
+Source, build scripts, stress studies and full documentation: https://github.com/VK12034/assistive-cad-library
 
 License: CC BY 4.0
 
