@@ -1,0 +1,97 @@
+{
+ "E": 2300,
+ "nu": 0.36,
+ "yield": 17.0,
+ "uts": 51.0,
+ "outdir": "./out",
+ "h": 3.0,
+ "curv": 0,
+ "plot": false,
+ "cases": [
+  {
+   "id": "twist",
+   "name": "Key twist 5.5 N*m, hand vs key (balanced)",
+   "rigid321": true,
+   "loads": [
+    {
+     "select": "(abs(y - T/2) < 0.05) & (ny > 0.99) & (x > W/4) & (z < H - Kd)",
+     "selectB": "(abs(y + T/2) < 0.05) & (ny < -0.99) & (x < -W/4) & (z < H - Kd)",
+     "couple": 5.5,
+     "dir": [
+      0,
+      -1,
+      0
+     ],
+     "axis": [
+      0,
+      0,
+      1
+     ]
+    },
+    {
+     "select": "(abs(abs(y) - Tk/2) < 0.05) & (abs(ny) > 0.99) & (z > H - Kd) & (y > 0) & (x > 0)",
+     "selectB": "(abs(abs(y) - Tk/2) < 0.05) & (abs(ny) > 0.99) & (z > H - Kd) & (y < 0) & (x < 0)",
+     "couple": 5.5,
+     "dir": [
+      0,
+      1,
+      0
+     ],
+     "axis": [
+      0,
+      0,
+      1
+     ]
+    }
+   ]
+  }
+ ],
+ "presets": [
+  {
+   "name": "M",
+   "step": "../step/key-turner_M.step",
+   "vars": {
+    "W": 95,
+    "H": 66,
+    "T": 18,
+    "Tk": 2.4,
+    "Wk": 32,
+    "Kd": 18
+   },
+   "boxes": [
+    [
+     -18,
+     18,
+     -3,
+     3,
+     46,
+     54,
+     1.2
+    ]
+   ]
+  },
+  {
+   "name": "L",
+   "step": "../step/key-turner_L.step",
+   "vars": {
+    "W": 105,
+    "H": 70,
+    "T": 18,
+    "Tk": 2.4,
+    "Wk": 32,
+    "Kd": 18
+   },
+   "boxes": [
+    [
+     -18,
+     18,
+     -3,
+     3,
+     50,
+     58,
+     1.2
+    ]
+   ]
+  }
+ ]
+}

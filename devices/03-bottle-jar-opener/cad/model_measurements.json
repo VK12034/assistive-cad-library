@@ -1,0 +1,74 @@
+{
+ "S": {
+  "volume_cm3": 44.7113,
+  "area_cm2": 147.474,
+  "bbox_mm": [
+   172.0,
+   122.006,
+   10.0
+  ],
+  "zmin_mm": 0.0,
+  "faces": 30,
+  "params": {
+   "cap_max": "82 mm",
+   "cap_min": "28 mm",
+   "v_half": "30 deg",
+   "jaw_len": "cap_max / ( 2 * sin(v_half) ) + 10 mm",
+   "jaw_wall": "10 mm",
+   "handle_len": "80 mm",
+   "handle_w": "30 mm",
+   "plate_t": "10 mm",
+   "apex_r": "2 mm",
+   "corner_r": "5 mm",
+   "top_r": "1.5 mm"
+  }
+ },
+ "L": {
+  "volume_cm3": 52.1872,
+  "area_cm2": 167.152,
+  "bbox_mm": [
+   197.0,
+   122.006,
+   10.0
+  ],
+  "zmin_mm": 0.0,
+  "faces": 30,
+  "params": {
+   "cap_max": "82 mm",
+   "cap_min": "28 mm",
+   "v_half": "30 deg",
+   "jaw_len": "cap_max / ( 2 * sin(v_half) ) + 10 mm",
+   "jaw_wall": "10 mm",
+   "handle_len": "105 mm",
+   "handle_w": "30 mm",
+   "plate_t": "10 mm",
+   "apex_r": "2 mm",
+   "corner_r": "5 mm",
+   "top_r": "1.5 mm"
+  }
+ },
+ "M": {
+  "volume_cm3": 49.1968,
+  "area_cm2": 159.281,
+  "bbox_mm": [
+   187.0,
+   122.006,
+   10.0
+  ],
+  "zmin_mm": 0.0,
+  "faces": 30,
+  "params": {
+   "cap_max": "82 mm",
+   "cap_min": "28 mm",
+   "v_half": "30 deg",
+   "jaw_len": "cap_max / ( 2 * sin(v_half) ) + 10 mm",
+   "jaw_wall": "10 mm",
+   "handle_len": "95 mm",
+   "handle_w": "30 mm",
+   "plate_t": "10 mm",
+   "apex_r": "2 mm",
+   "corner_r": "5 mm",
+   "top_r": "1.5 mm"
+  }
+ }
+}

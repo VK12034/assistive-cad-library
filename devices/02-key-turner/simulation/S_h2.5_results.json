@@ -1,0 +1,45 @@
+[
+ {
+  "preset": "S",
+  "case": "Key twist 5.5 N*m, hand vs key (balanced)",
+  "h": 2.5,
+  "dofs": 282768,
+  "tets": 61976,
+  "vm_max": 20.71122614904343,
+  "vm_p999": 10.04210710077214,
+  "vm_loc": [
+   -15.73,
+   0.95,
+   60.71
+  ],
+  "s1_max": 24.030328286568498,
+  "umax": 0.16245731062959332,
+  "vm_raw": 20.71122614904343,
+  "applied": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "reaction_sum": [
+   0.0,
+   -0.0,
+   0.0
+  ],
+  "SF_yield": 0.8208108915263408,
+  "SF_uts": 2.4624326745790226,
+  "szz_max": 7.441170190411767,
+  "szz_loc": [
+   -5.79,
+   -0.99,
+   44.36
+  ],
+  "SF_aniso": 2.284586908374324,
+  "notes": [
+   "couple 5.50 N*m about [0, 0, 1]: 95.0 N on each patch (lever arm 57.9 mm; A 783.0 mm2 at [28.9, 9.0, 22.1], B 778.9 mm2 at [-29.0, -9.0, 22.2])",
+   "couple 5.50 N*m about [0, 0, 1]: 371.9 N on each patch (lever arm 14.8 mm; A 240.4 mm2 at [7.4, 1.2, 53.0], B 239.9 mm2 at [-7.4, -1.2, 53.0])",
+   "3-2-1 rigid-body supports at bottom vertices [37.0, -7.0, 0.0], [-37.0, 7.0, 0.0], [-34.17, 9.0, 0.0]",
+   "solve 29.3s",
+   "peak reported outside 4.0 mm of the 3 point supports (raw peak incl. supports 20.711 MPa); 1558 of 681736 integration points excluded"
+  ]
+ }
+]

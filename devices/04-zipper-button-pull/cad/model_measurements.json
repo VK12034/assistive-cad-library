@@ -1,0 +1,86 @@
+{
+ "S": {
+  "volume_cm3": 28.3214,
+  "area_cm2": 81.769,
+  "bbox_mm": [
+   153.0,
+   24.0,
+   14.0
+  ],
+  "zmin_mm": 0.0,
+  "faces": 84,
+  "params": {
+   "handle_len": "80 mm",
+   "handle_w": "24 mm",
+   "handle_t": "14 mm",
+   "taper_len": "15 mm",
+   "neck_len": "30 mm",
+   "neck_w": "8 mm",
+   "hook_t": "3.5 mm",
+   "loop_ow": "18 * 0.635 mm",
+   "loop_len": "28 mm",
+   "wire_w": "3 mm",
+   "butt_r": "6 mm",
+   "trans_r": "2 mm",
+   "grip_r": "4 mm",
+   "hook_r": "1 mm",
+   "tip_w": "4.5 mm"
+  }
+ },
+ "L": {
+  "volume_cm3": 36.5497,
+  "area_cm2": 99.91,
+  "bbox_mm": [
+   178.0,
+   24.0,
+   14.0
+  ],
+  "zmin_mm": 0.0,
+  "faces": 84,
+  "params": {
+   "handle_len": "105 mm",
+   "handle_w": "24 mm",
+   "handle_t": "14 mm",
+   "taper_len": "15 mm",
+   "neck_len": "30 mm",
+   "neck_w": "8 mm",
+   "hook_t": "3.5 mm",
+   "loop_ow": "18 * 0.635 mm",
+   "loop_len": "28 mm",
+   "wire_w": "3 mm",
+   "butt_r": "6 mm",
+   "trans_r": "2 mm",
+   "grip_r": "4 mm",
+   "hook_r": "1 mm",
+   "tip_w": "4.5 mm"
+  }
+ },
+ "M": {
+  "volume_cm3": 33.2584,
+  "area_cm2": 92.654,
+  "bbox_mm": [
+   168.0,
+   24.0,
+   14.0
+  ],
+  "zmin_mm": 0.0,
+  "faces": 84,
+  "params": {
+   "handle_len": "95 mm",
+   "handle_w": "24 mm",
+   "handle_t": "14 mm",
+   "taper_len": "15 mm",
+   "neck_len": "30 mm",
+   "neck_w": "8 mm",
+   "hook_t": "3.5 mm",
+   "loop_ow": "18 * 0.635 mm",
+   "loop_len": "28 mm",
+   "wire_w": "3 mm",
+   "butt_r": "6 mm",
+   "trans_r": "2 mm",
+   "grip_r": "4 mm",
+   "hook_r": "1 mm",
+   "tip_w": "4.5 mm"
+  }
+ }
+}
