@@ -1,0 +1,22 @@
+# Fusion 360 backups and locks
+*.f3d.lock
+AutodeskBackup/
+*.bak
+
+# Slicer output
+*.gcode
+*.bgcode
+*.3mf.backup
+
+# OS cruft
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
